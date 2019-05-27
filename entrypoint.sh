@@ -14,10 +14,10 @@ if [[ -z "$GITHUB_TOKEN" ]]; then
 fi
 
 ## Update Git Config.
-git config --global user.email "wptextdomain+github@gmail.com" && git config --global user.name "WP TextDomain on GitHub"
+git config --global user.email "wptextdomain+github@gmail.com" && git config --global user.name "WP Text Domain Action On Github"
 
 cd ../
-wget https://raw.githubusercontent.com/wpapps/wp-add-textdomain/master/addtextdomain.php
+wget https://raw.githubusercontent.com/wpapps/wp-text-domain/master/addtextdomain.php
 
 # Generate POT File
 php addtextdomain.php -i "$DOMAIN" "$GITHUB_WORKSPACE"
