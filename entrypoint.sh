@@ -21,10 +21,18 @@ fi
 git config --global user.email "wptextdomain+github@gmail.com" && git config --global user.name "WP TextDomain on GitHub"
 
 #cd "$GITHUB_WORKSPACE"
-ls -la 
-ls
-echo ls -la
-echo ls
+echo "ON LINE 24"
+ls -la
+
+cd ../
+echo "ON LINE 28"
+ls -la
+
+cd "$GITHUB_WORKSPACE"
+echo "ON LINE 32"
+ls -la
+
+
 # Generate POT File
 php addtextdomain.php -i "$DOMAIN" "$GITHUB_WORKSPACE"
 #wp i18n make-pot . "$SAVE_PATH" --slug="$ITEM_SLUG" --package-name="$PACKAGE_NAME" --headers="$HEADERS" --allow-root
