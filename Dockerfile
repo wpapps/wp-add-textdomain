@@ -2,14 +2,14 @@ FROM php:7.0-apache
 
 #COPY php.ini /usr/local/etc/php/
 
-LABEL "com.github.actions.name" = "WP Text Domain"
-LABEL "com.github.actions.description" = "Adds TextDomain To your wordpress Plugin / Theme based on the content inside Github Repo"
-LABEL "com.github.actions.icon" = "message-square"
-LABEL "com.github.actions.color" = "blue"
-LABEL "repository" = "https://github.com/wpapps/wp-text-domain"
-LABEL "homepage"   = "https://github.com/wpapps/wp-text-domain"
-LABEL "maintainer" = "Varun Sridharan <varunsridharan23@gmail.com>"
-LABEL "version"    = "1.0.0"
+LABEL "com.github.actions.name"="WP Text Domain"
+LABEL "com.github.actions.description"="Adds TextDomain To your wordpress Plugin / Theme based on the content inside Github Repo"
+LABEL "com.github.actions.icon"="message-square"
+LABEL "com.github.actions.color"="gray-dark"
+LABEL "repository"="https://github.com/wpapps/wp-text-domain"
+LABEL "homepage"="https://github.com/wpapps/wp-text-domain"
+LABEL "maintainer"="Varun Sridharan <varunsridharan23@gmail.com>"
+LABEL "version"="1.0.0"
 
 # Environments
 ENV TIMEZONE                 Asia/Kolkata
