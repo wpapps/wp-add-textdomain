@@ -21,6 +21,8 @@ fi
 git config --global user.email "wptextdomain+github@gmail.com" && git config --global user.name "WP TextDomain on GitHub"
 
 #cd "$GITHUB_WORKSPACE"
+ls -la 
+ls
 echo ls -la
 echo ls
 # Generate POT File
