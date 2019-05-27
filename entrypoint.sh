@@ -21,10 +21,7 @@ fi
 git config --global user.email "wptextdomain+github@gmail.com" && git config --global user.name "WP TextDomain on GitHub"
 
 #cd "$GITHUB_WORKSPACE"
-echo "ON LINE 24"
-ls -la
-
-cd ../
+cd ../workflow/
 echo "ON LINE 28"
 ls -la
 
