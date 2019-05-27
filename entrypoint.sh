@@ -22,11 +22,15 @@ git config --global user.email "wptextdomain+github@gmail.com" && git config --g
 
 #cd "$GITHUB_WORKSPACE"
 cd ../workflow/
-echo "ON LINE 28"
+echo "ON LINE 25"
+ls -la
+
+cd ../home/
+echo "ON LINE 29"
 ls -la
 
 cd "$GITHUB_WORKSPACE"
-echo "ON LINE 32"
+echo "ON LINE 33"
 ls -la
 
 
