@@ -20,10 +20,10 @@ fi
 ## Update Git Config.
 git config --global user.email "wptextdomain+github@gmail.com" && git config --global user.name "WP TextDomain on GitHub"
 
-cd "$GITHUB_WORKSPACE"
+#cd "$GITHUB_WORKSPACE"
 
 # Generate POT File
-php addtextdomain.php -i "$DOMAIN" ./
+php addtextdomain.php -i "$DOMAIN" "$GITHUB_WORKSPACE"
 #wp i18n make-pot . "$SAVE_PATH" --slug="$ITEM_SLUG" --package-name="$PACKAGE_NAME" --headers="$HEADERS" --allow-root
 
 # ls -l | cat $SAVE_PATH | echo ${GITHUB_REF} | echo $GITHUB_REF
